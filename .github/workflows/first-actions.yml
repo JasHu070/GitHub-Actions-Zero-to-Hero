@@ -13,5 +13,14 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v4
 
+      - name: Show Current Directory
+        run: pwd
+
+      - name: List Files
+        run: ls -la
+
+      - name: Show OS Information
+        run: uname -a
+
       - name: Print Message
-        run: echo "Hello Jaswanth! GitHub Actions is running."
+        run: echo "Hello from GitHub Actions"
